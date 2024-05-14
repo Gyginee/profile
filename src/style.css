@@ -1,0 +1,253 @@
+/* ====================== GLOBAL CSS =========================== */
+@font-face {
+  font-family: 'Lifeless';
+  src: url('/public/font/BDLifelessGrotesk_Variable.ttf') format('truetype'),
+
+}
+
+@font-face {
+  font-family: 'Xuong';
+  src: url('/public/font/TNH_Xuong.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Geomanist';
+  src: url('/public/font/Geomanist-Black.otf') format('opentype');
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FAACA8;
+  background: #ff4b1f;
+  background: -webkit-linear-gradient(to right, #ff9068, #ff4b1f);
+  background: linear-gradient(to right, #ff9068, #ff4b1f);
+}
+
+/* ====================== END GLOBAL CSS =========================== */
+
+
+/* ===================================================================== */
+.container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* ====================== HEADER  =========================== */
+.header {
+  width: 100%;
+  z-index: 1;
+  align-items: center;
+  text-align: center;
+}
+
+.header ul {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  height: 30px;
+}
+
+.header ul li {
+  display: inline;
+  margin-right: 2rem;
+}
+
+.header ul li:last-child {
+
+  margin-right: 0;
+}
+
+.header ul li a {
+  text-decoration: none;
+  font-family: 'Lifeless', sans-serif;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 1.25em;
+  transition: color 0.3s ease;
+  /* Adding a smooth transition effect */
+}
+
+.header ul li a:hover {
+  transition: font-size 0.3s ease;
+  color: #36395A;
+  font-size: 1.35em;
+}
+
+/* ====================== END HEADER  =========================== */
+
+/* ====================== SECTION FIRST =========================== */
+.section-first {
+  display: flex;
+  align-items: center;
+  /*  padding-top: 7%; */
+  height: 100%;
+}
+
+.sfContainer {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.sfTitle {
+  width: 100%;
+}
+
+.sfTitle .typed-text {
+  font-family: 'Geomanist', sans-serif;
+  font-size: 19em;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  text-shadow: 20px 10px 4px #3a3a3a3f;
+}
+
+
+
+/* ====================== MODEL =========================== */
+.model-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+}
+
+
+/* ====================== END MODEL =========================== */
+
+/* ====================== SECTION SECOND =========================== */
+.section-second {
+  display: flex;
+  align-items: center;
+  padding-top: 26%;
+}
+
+.ssText {
+  width: 70%;
+  font-family: 'Lifeless', sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  text-align: center;
+  color: white;
+}
+
+
+
+.ssResume {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.ssResume .btn {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: 'Lifeless', sans-serif;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 60px;
+  padding-right: 60px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s, transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.ssResume .btn:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.ssResume .btn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.ssResume .btn:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+/* ====================== END SECTION SECOND =========================== */
+/* ====================== ========================= =========================== */
+/* ====================== Responsive =========================== */
+
+
+@media screen and (min-width: 1440px) {}
+
+@media screen and (min-width: 1920px) {}
+
+@media screen and (max-width: 1280px) {}
+
+@media screen and (max-width: 1024px) {
+  .sfTitle .typed-text {
+    font-size: 12em;
+    text-align: center;
+    display: inline-block;
+  }
+  .section-second {
+    padding-top: 80%;
+  }
+  .model-container {
+    top: 48%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sfTitle .typed-text {
+    font-size: 7em;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .section-second {
+    padding-top: 70vh;
+  }
+
+  .model-container {
+    top: 55%;
+  }
+  .header ul li a {
+    font-size: 1em;
+  }
+}
