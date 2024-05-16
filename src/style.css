@@ -147,13 +147,16 @@ body {
 }
 
 .ssText {
-  width: 70%;
+  width: 100%;
   font-family: 'Lifeless', sans-serif;
   font-size: 24px;
   line-height: 1.5;
-  margin-bottom: 15px;
   text-align: center;
   color: white;
+}
+.ssText {
+ margin: 0;
+ padding: 0;
 }
 
 
@@ -211,13 +214,66 @@ body {
 /* ====================== END SECTION SECOND =========================== */
 /* ====================== ========================= =========================== */
 /* ====================== Responsive =========================== */
+@media screen and (max-width: 2880px) {
+  .sfTitle .typed-text {
+    font-size: 24em;
+    text-align: center;
+    display: inline-block;
+  }
+  .section-second {
+    padding-top: 45vh;
+  }
 
+  .model-container {
+    top: 48%;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .sfTitle .typed-text {
+    font-size: 18em;
+    text-align: center;
+    display: inline-block;
+  }
+  .section-second {
+    padding-top: 45vh;
+  }
 
-@media screen and (min-width: 1440px) {}
+  .model-container {
+    top: 48%;
+  }
+}
 
-@media screen and (min-width: 1920px) {}
+@media screen and (max-width: 1440px) {
+  .sfTitle .typed-text {
+    font-size: 15em;
+    text-align: center;
+    display: inline-block;
+  }
 
-@media screen and (max-width: 1280px) {}
+  .section-second {
+    padding-top: 50vh;
+  }
+
+  .model-container {
+    top: 48%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .sfTitle .typed-text {
+    font-size: 12em;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .section-second {
+    padding-top: 55vh;
+  }
+
+  .model-container {
+    top: 48%;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   .sfTitle .typed-text {
@@ -225,9 +281,11 @@ body {
     text-align: center;
     display: inline-block;
   }
+
   .section-second {
-    padding-top: 80%;
+    padding-top: 40vh;
   }
+
   .model-container {
     top: 48%;
   }
@@ -238,15 +296,17 @@ body {
     font-size: 7em;
     text-align: center;
     display: inline-block;
+    text-shadow: 10px 5px 2px #3a3a3a15;
   }
 
   .section-second {
-    padding-top: 70vh;
+    padding-top: 45vh;
   }
 
   .model-container {
-    top: 55%;
+    top: 58%;
   }
+
   .header ul li a {
     font-size: 1em;
   }
